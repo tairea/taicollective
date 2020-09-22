@@ -6,7 +6,8 @@
       class="name"
       :class="{ first: data.first_letter_only }"
     >
-      <span
+      TAI COLLECTIVE .NZ
+      <!-- <span
         class="word"
         :class="{ 'first-line': index === 0 && multiLine }"
         v-for="(word, index) in siteName"
@@ -19,10 +20,12 @@
           word.slice(1)
         }}</span>
         <span v-if="!data.first_letter_only">{{ word }}</span>
-      </span>
+      </span> -->
     </g-link>
     <div class="contact">
-      <a class="link" :href="`mailto:${data.email}`">say hi !</a>
+      <a class="link" :href="`mailto:${data.email}`">
+        KIA ORA!
+      </a>
     </div>
   </header>
 </template>
