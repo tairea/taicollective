@@ -5,19 +5,14 @@
   "email": "i.tairea@taiwananga.co.nz",
   "social": [
     {
-      "channel": "twitter",
-      "handle": "nichlaswa",
-      "link_text": "tw"
+      "channel": "facebook.com/taiwanangatutoa",
+      "handle": "taiwanangatutoa",
+      "link_text": "FB"
     },
     {
-      "channel": "instagram",
+      "channel": "tutoa.co.nz",
       "handle": "its.nwa",
-      "link_text": "ig"
-    },
-    {
-      "channel": "github",
-      "handle": "itsnwa",
-      "link_text": "gh"
+      "link_text": "WEB"
     }
   ]
 }

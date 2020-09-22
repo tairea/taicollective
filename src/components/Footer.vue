@@ -6,7 +6,7 @@
         class="channel"
         v-for="(social, index) in data.social"
         :key="index"
-        :href="`https://${social.channel}.com/${social.handle}`"
+        :href="`https://${social.channel}`"
       >
         {{ social.link_text }}
       </a>
