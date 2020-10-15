@@ -7,16 +7,23 @@
         v-for="project in $page.projects.edges"
         :key="project.node.id"
       >
-        <g-image
-          class="project-thumbnail"
-          :src="project.node.thumbnail.src"
-          :alt="project.node.title"
-        ></g-image>
-        <ProjectMeta
-          :title="project.node.title"
-          :categories="project.node.categories"
-          :year="project.node.year"
-        />
+        <div class="flexbox">
+          <div class="left">
+            <g-image
+              class="project-thumbnail"
+              :src="project.node.thumbnail.src"
+              :alt="project.node.title"
+              width="50"
+            ></g-image>
+          </div>
+          <div class="right">
+            <ProjectMeta
+              :title="project.node.title"
+              :categories="project.node.categories"
+              :year="project.node.year"
+            />
+          </div>
+        </div>
       </article>
     </section>
   </Layout>
@@ -44,10 +51,10 @@ import ProjectMeta from "@/components/ProjectMeta";
 
 export default {
   components: {
-    ProjectMeta
+    ProjectMeta,
   },
   metaInfo: {
-    titleTemplate: require("../data/theme.json").site_name
+    titleTemplate: require("../data/theme.json").site_name,
   },
   methods: {
     goTo(event, route) {
@@ -64,8 +71,8 @@ export default {
       setTimeout(() => {
         this.$router.push(route);
       }, 450);
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -81,5 +88,27 @@ export default {
 .project-thumbnail {
   display: block;
   width: 100%;
+}
+
+.flexbox {
+  display: flex;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+}
+
+.left, .right {
+  width: 50%;
+  height: auto;
+   @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+.right {
+  padding: 50px;
+  @media (max-width: 500px) {
+    padding: 10px;
+  }
 }
 </style>

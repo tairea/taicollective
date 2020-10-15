@@ -35,20 +35,28 @@ export default {
 
 <style lang="scss" scoped>
 .project-meta {
-  display: flex;
-  padding: 4rem 0;
+  padding: 2rem 0;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   line-height: 1.5;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  @media (max-width: 599px) {
+    padding: 0;
+    align-items: center;
+  }
+  
 }
 .project-title {
-  flex: 0 0 40%;
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
 }
 .project-categories {
-  flex: 1;
   padding: 0;
   margin: 0;
   list-style: none;
@@ -58,7 +66,6 @@ export default {
   margin: 0;
 }
 .project-year {
-  flex: 1;
   text-align: right;
 }
 </style>

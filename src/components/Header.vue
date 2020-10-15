@@ -1,32 +1,8 @@
 <template>
   <header class="header">
-    <g-link
-      to="/"
-      tag="h1"
-      class="name"
-      :class="{ first: data.first_letter_only }"
-    >
-      TAI COLLECTIVE .NZ
-      <!-- <span
-        class="word"
-        :class="{ 'first-line': index === 0 && multiLine }"
-        v-for="(word, index) in siteName"
-        :key="index"
-      >
-        <span class="first-letter" v-if="data.first_letter_only && word[0]">{{
-          word[0]
-        }}</span>
-        <span class="letter" v-if="data.first_letter_only">{{
-          word.slice(1)
-        }}</span>
-        <span v-if="!data.first_letter_only">{{ word }}</span>
-      </span> -->
-    </g-link>
-    <div class="contact">
-      <a class="link" :href="`mailto:${data.email}`">
-        KIA ORA!
-      </a>
-    </div>
+    <g-link to="/" exact class="tohu"> 
+   <img src="/uploads/tohu-white-nobg.png" width="150"/>
+   </g-link>
   </header>
 </template>
 
@@ -54,9 +30,9 @@ export default {
 <style lang="scss" scoped>
 .header {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 4rem 2rem 5rem 2rem;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem 2rem 2rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   z-index: 100;
@@ -67,35 +43,20 @@ export default {
     opacity: 0;
   }
 }
-.name {
+.tohu {
   font-size: 1rem;
   font-weight: 500;
   user-select: none;
   margin: 0;
   cursor: pointer;
-  .word {
-    margin-right: 0.5rem;
-    &.first-line {
-      display: block;
-      margin-bottom: 0.5rem;
-    }
-    &:last-of-type {
-      margin: 0;
-    }
-  }
-  &.first {
-    .letter {
-      transition: opacity 0.15s ease;
-      opacity: 0;
-    }
-    .first-letter {
-      opacity: 1;
-    }
-    &:hover {
-      .letter {
-        opacity: 1;
-      }
-    }
-  }
+}
+
+a:hover {
+  border:none
+}
+
+a {
+  border: none;
+  transition: none;
 }
 </style>
