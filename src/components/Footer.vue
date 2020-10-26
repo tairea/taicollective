@@ -2,14 +2,20 @@
   <footer class="footer">
     <div class="to-top" @click="scrollTopTop">-></div>
     <div class="social">
-      <a
+      <!-- <a
         class="channel"
         v-for="(social, index) in data.social"
         :key="index"
         :href="`https://${social.channel}`"
       >
         {{ social.link_text }}
-      </a>
+      </a> -->
+      <router-link
+        class="channel"
+        to="/about"
+      >
+        ABOUT
+      </router-link>
     </div>
   </footer>
 </template>

@@ -68,7 +68,8 @@ export default {
   }
 }
 
-.left, .right {
+.left,
+.right {
   width: 50%;
   @media (max-width: 599px) {
     width: 100%;
@@ -76,14 +77,14 @@ export default {
 }
 
 .right {
-  padding: 50px; 
-   @media (max-width: 599px) {
-     padding: 10px;
+  padding: 50px;
+  @media (max-width: 599px) {
+    padding: 10px;
   }
 }
 
 .thumbnail {
-  width:100%;
+  width: 100%;
 }
 
 img {
@@ -96,7 +97,7 @@ p {
 }
 
 .content-text {
-  padding: 4rem 0 6rem 0;
+  padding: 4rem 0 0 0;
   font-size: 2rem;
   font-weight: 400;
   margin-left: 0;
@@ -104,6 +105,21 @@ p {
   line-height: 1.5;
   @media (min-width: 920px) {
     margin-left: 40%;
+  }
+}
+
+ul {
+  // margin-top: 6rem;
+  // margin-bottom: 6rem;
+  margin: 6rem;
+  @media (max-width: 599px) {
+    margin: 6rem 0;
+  }
+
+  li {
+    font-size: 1.5rem;
+    font-weight: 400;
+    // text-align: right;
   }
 }
 
@@ -115,12 +131,11 @@ p {
 .image {
   padding: 25px;
   width: 50%;
+
   @media (max-width: 599px) {
     width: 100%;
     padding: 0;
     // padding: 10px;
   }
 }
-
-
 </style>

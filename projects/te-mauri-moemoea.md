@@ -6,7 +6,12 @@ categories:
 - RANGATAHI PROJECT
 
 ---
-This project required the TAI COLLECTIVE teams to produce 6 narratives with voice-overs and music as well as 8 mobile games.
+This project required the TAI COLLECTIVE teams to produce: 
+- 6 storylines about the ātua Tāne
+- 8 voiceover recordings 
+- 8 music tracks
+- 8 HTML5 mini-games 
+
 <div class="imagesContainer">
     <img class="image" src="/uploads/tmm-narrative-1.jpg">
     <img class="image" src="/uploads/tmm-narrative-2.jpg">
